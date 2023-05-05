@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hesapmakinesi.css">
+    <title>Hesap Makinesi</title>
+</head>
+<body>
+    
+    <div class = "display">
+        <input id="display-screen" class = "display-content" type = "text" placeholder="Rakamlara ve İşlemlere Tıklayınız." disabled>
+        <div id="equation" class="equation"> 0 </div> 
+        </div>
+    </div>
+
+    <div class = "tuslar">
+        <button class="buttons" onclick="clearAll()" > &#37; </button>
+        <button class="buttons" onclick="clearAll()" > CE </button>
+        <button class="buttons" onclick="clearAll()"> C </button>
+        <button class="buttons" onclick=" removeText(); "> <img src="delete-icon.png" width="24px" > </button>
+        <button class="buttons" onclick="xSquare();" > x&sup2; </button>
+        <button class="buttons" onclick="xCube()" > x&sup3; </button>
+        <button class="buttons" onclick="squareRoot()" > &radic; </button>
+        <button class="buttons" onclick=" divide();" >  &divide; </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='7';" > 7 </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='8';" > 8 </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='9';" > 9 </button>
+        <button class="buttons" onclick="multiply()" > X </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='4';" > 4 </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='5';" > 5 </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='6';" > 6 </button>
+        <button class="buttons" onclick="substract(); " > &ndash; </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='1';" > 1 </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='2';" > 2 </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='3';" > 3 </button>
+        <button class="buttons" onclick="add()" > &plus; </button>
+        <button class="buttons" onclick="divideByTwo()" > &frac12; </button>
+        <button class="buttons" onclick="document.getElementById('display-screen').value+='0';" > 0 </button>
+        <button class="buttons" onclick="addPeriod()" > &period; </button>
+        <button class="buttons"onclick="getEqual()" > &equals; </button>
+    </div>
+    <script src="tuskomut.js"></script>
+
+    
+</body>
+</html>

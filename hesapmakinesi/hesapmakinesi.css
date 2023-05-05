@@ -1,0 +1,56 @@
+body
+{
+    margin: 0;
+}
+
+.display
+{
+    width: 400px;
+    position: relative;
+}
+
+.display-content
+{
+    width: 393px;
+    margin:0;   
+    background-color: rgb(240, 240, 240);
+}
+.equation
+{
+    position: absolute;
+    right:5px;
+    top: 2px;
+}
+
+.tuslar
+{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    max-width: 400px;
+    min-height: 50px;
+    padding-top: 1px;
+    background: linear-gradient(180deg, rgb(250, 63, 247) 25%, rgb(182, 51, 247) 78%);
+}  
+
+.buttons{
+    height: 50px;
+    border-radius: 15px;
+    border:solid;
+    border-width: 1px;
+    background-color: rgb(255, 255, 255);
+    transition:  200ms;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.9;
+}
+.buttons:hover
+{
+    background-color: #CCCBBB;
+}
+.buttons:active
+{
+    opacity: 0.5;
+    background-color: #e8ece7;
+    border-radius: 10px;
+}
+
